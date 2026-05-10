@@ -18,8 +18,8 @@ const homeBtn = document.querySelector("#home");
 const nextStoryBtn = document.querySelector("#next-story");
 
 // parametri chat GPT
+const API_KEY = "xyz";
 const endpoint = "https://api.openai.com/v1/chat/completions";
-const API_KEY = "";
 
 // Funzione che colora le emoji selezionate
 function colorSelectedEmojis() {
