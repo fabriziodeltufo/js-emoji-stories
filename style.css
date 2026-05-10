@@ -1,0 +1,179 @@
+/* emoji stories style */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: pink;
+  border: 1px solid pink;
+}
+
+img {
+  width: 35px;
+  height: 35px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! HEADER */
+/* -------------------------------------------------------------------------------- */
+
+header {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! MAIN -- starting */
+/* -------------------------------------------------------------------------------- */
+
+.starting-section {
+  padding: 30px;
+}
+
+.fields {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.fields h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.fields input {
+  width: 100%;
+  border-bottom: 1px solid rgb(132, 4, 4);
+  background-color: transparent;
+  border-radius: 0px;
+  border: none;
+  border-bottom: 1px solid brown;
+  padding: 10px;
+  color: brown;
+  outline: none;
+  font-size: 20px;
+}
+
+.emoji-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.emoji {
+  font-size: 50px;
+  padding: 10px;
+}
+
+.selected,
+.emoji:hover {
+  background-color: #1b9ec5;
+  padding: 10px;
+  border-radius: 100%;
+}
+
+button {
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgb(239, 88, 171);
+  border: 0px solid pink;
+  font-size: 30px;
+  font-weight: normal;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! MAIN - working */
+/* -------------------------------------------------------------------------------- */
+
+.working-section img {
+  width: 150px;
+  height: 150px;
+  margin: 150px auto;
+  display: block;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! MAIN - ending */
+/* -------------------------------------------------------------------------------- */
+
+.ending-section {
+  padding: 30px;
+  margin: 0 auto;
+  margin-top: 50px;
+  /* border: 1px solid red; */
+}
+
+.ending-heading h2 {
+  text-transform: uppercase;
+}
+
+.ending-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+
+.ending-buttons #home {
+  width: auto;
+  background-color: white;
+  border: 3px solid rgb(239, 88, 171);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! FOOTER */
+/* -------------------------------------------------------------------------------- */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! DEFAULTS */
+/* -------------------------------------------------------------------------------- */
+
+.starting-section,
+.working-section,
+.ending-section {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ! VISIBILITY RULES */
+/* -------------------------------------------------------------------------------- */
+
+.start > .starting-section,
+.work > .working-section,
+.end > .ending-section {
+  display: block;
+}

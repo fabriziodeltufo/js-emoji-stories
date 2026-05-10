@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji Stories</title>
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="img/icon.png" alt="">
+            <h1>EMOJI STORIES</h1>
+        </header>
+
+        <!-- actions keys : start, work, end -->
+        <main class="start">
+
+            <section class="starting-section">
+                <div class="fields">
+                    <h2>Nome del protagonista</h2>
+                    <input type="text">
+                </div>
+
+                <div class="fields">
+                    <h2>Scegli 3 emoji</h2>
+                    <ul class="emoji-list">
+                        <li class="emoji">🍁</li>
+                        <li class="emoji">❄️</li>
+                        <li class="emoji">🌸</li>
+                        <li class="emoji">😇</li>
+                        <li class="emoji">☀️</li>
+                        <li class="emoji">🙃</li>
+                        <li class="emoji">😍</li>
+                        <li class="emoji">🤓</li>
+                    </ul>
+                </div>
+                <button id="generate">GENERA</button>
+            </section>
+
+
+            <section class="working-section">
+                <img src="/img/loader.gif" alt="working ....">
+            </section>
+
+
+            <section class="ending-section">
+
+                <div class="ending-heading">
+
+                    <h2 class="story-title">Titolo</h2>
+                    <p class="story-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem vitae omnis,
+                        maiores sequi aliquid
+                        ullam
+                        beatae repellat numquam quos eveniet ipsum voluptate possimus aspernatur labore dicta! Libero,
+                        fugit.
+                        Quia, dolorum.</p>
+                </div>
+
+                <div class="ending-buttons">
+                    <button id="home"><img src="/img/home.png" alt="home"></button>
+                    <button id="next-story">AVANTI</button>
+                </div>
+
+
+            </section>
+
+        </main>
+
+
+        <footer>
+            WeWebby.com (©)2025 - Emoji Stories
+        </footer>
+
+
+
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
